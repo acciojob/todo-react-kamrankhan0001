@@ -32,13 +32,13 @@ const App = () => {
           onChange={handleInputChange}
           placeholder="Enter your task..."
         />
-        <button onClick={handleAddTodo}>Add</button>
+        <button onClick={handleAddTodo}>Add Todo</button>
       </div>
       <ul>
         {todos.map((todo, index) => (
           <li key={index}>
             {todo}
-            <button onClick={() => handleRemoveTodo(index)}>Remove</button>
+            <button onClick={() => handleRemoveTodo(index)}>Delete</button>
           </li>
         ))}
       </ul>
